@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="Hybrid RAG pipeline: documents to cited answer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b0f1a"/><stop offset="1" stop-color="#171230"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .t{font-family:'Segoe UI',Helvetica,Arial,sans-serif;font-size:13px;fill:#e2e8f0;text-anchor:middle;font-weight:600}
+      .s{font-family:Consolas,'Liberation Mono',monospace;font-size:10.5px;fill:#94a3b8;text-anchor:middle}
+      .n{fill:#111827;stroke-width:1.5}
+      .pulse{animation:p 3s ease-in-out infinite}
+      @keyframes p{0%,100%{stroke-opacity:.4}50%{stroke-opacity:1}}
+    </style>
+  </defs>
+  <rect width="900" height="260" rx="16" fill="url(#bg)"/>
+  <text x="450" y="34" class="t" style="font-size:16px;fill:#a78bfa">How my retrieval pipelines think</text>
+
+  <!-- track -->
+  <path id="track" d="M70,130 H830" stroke="#334155" stroke-width="2" stroke-dasharray="4 6" fill="none">
+    <animate attributeName="stroke-dashoffset" values="0;-20" dur="1s" repeatCount="indefinite"/>
+  </path>
+
+  <g>
+    <rect x="25" y="100" width="90" height="60" rx="10" class="n pulse" stroke="#22d3ee"/>
+    <text x="70" y="127" class="t">Ingest</text><text x="70" y="145" class="s">PDF·DOCX·OCR</text>
+
+    <rect x="140" y="100" width="90" height="60" rx="10" class="n pulse" stroke="#38bdf8" style="animation-delay:.4s"/>
+    <text x="185" y="127" class="t">Chunk</text><text x="185" y="145" class="s">~6K tokens</text>
+
+    <rect x="255" y="100" width="90" height="60" rx="10" class="n pulse" stroke="#818cf8" style="animation-delay:.8s"/>
+    <text x="300" y="127" class="t">Embed</text><text x="300" y="145" class="s">HuggingFace</text>
+
+    <rect x="370" y="55" width="100" height="50" rx="10" class="n pulse" stroke="#a78bfa" style="animation-delay:1.2s"/>
+    <text x="420" y="76" class="t">Qdrant</text><text x="420" y="93" class="s">vector search</text>
+    <rect x="370" y="155" width="100" height="50" rx="10" class="n pulse" stroke="#c084fc" style="animation-delay:1.2s"/>
+    <text x="420" y="176" class="t">Neo4j</text><text x="420" y="193" class="s">graph walk</text>
+
+    <rect x="495" y="100" width="100" height="60" rx="10" class="n pulse" stroke="#e879f9" style="animation-delay:1.6s"/>
+    <text x="545" y="127" class="t">Rerank</text><text x="545" y="145" class="s">BAAI x-encoder</text>
+
+    <rect x="620" y="100" width="100" height="60" rx="10" class="n pulse" stroke="#f472b6" style="animation-delay:2s"/>
+    <text x="670" y="127" class="t">LLM</text><text x="670" y="145" class="s">Groq · Ollama</text>
+
+    <rect x="745" y="100" width="130" height="60" rx="10" class="n pulse" stroke="#fb923c" style="animation-delay:2.4s"/>
+    <text x="810" y="127" class="t">Cited Output</text><text x="810" y="145" class="s">Pydantic ✔ guardrails</text>
+  </g>
+
+  <!-- fork / join branches -->
+  <path d="M345,130 C358,130 358,80 370,80" stroke="#a78bfa" stroke-width="1.5" fill="none"/>
+  <path d="M345,130 C358,130 358,180 370,180" stroke="#c084fc" stroke-width="1.5" fill="none"/>
+  <path d="M470,80 C483,80 483,130 495,130" stroke="#a78bfa" stroke-width="1.5" fill="none"/>
+  <path d="M470,180 C483,180 483,130 495,130" stroke="#c084fc" stroke-width="1.5" fill="none"/>
+
+  <!-- data packets -->
+  <g filter="url(#g)">
+    <circle r="5" fill="#22d3ee"><animateMotion dur="6s" repeatCount="indefinite" path="M25,130 H345 C358,130 358,80 370,80 H470 C483,80 483,130 495,130 H875"/></circle>
+    <circle r="5" fill="#f472b6"><animateMotion dur="6s" begin="2s" repeatCount="indefinite" path="M25,130 H345 C358,130 358,180 370,180 H470 C483,180 483,130 495,130 H875"/></circle>
+    <circle r="5" fill="#fde68a"><animateMotion dur="6s" begin="4s" repeatCount="indefinite" path="M25,130 H345 C358,130 358,80 370,80 H470 C483,80 483,130 495,130 H875"/></circle>
+  </g>
+  <text x="450" y="240" class="s" style="font-size:12px">every answer traces back to evidence → rule → confidence → hypothesis</text>
+</svg>

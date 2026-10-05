@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300" role="img" aria-label="Terminal introducing Kerith Paul Perla">
+  <defs>
+    <clipPath id="l0"><rect x="40" y="70" height="30"><animate attributeName="width" dur="16s" repeatCount="indefinite" keyTimes="0;0.02;0.08;0.94;0.96;1" values="0;0;820;820;0;0"/></rect></clipPath>
+    <clipPath id="l1"><rect x="40" y="105" height="30"><animate attributeName="width" dur="16s" repeatCount="indefinite" keyTimes="0;0.10;0.16;0.94;0.96;1" values="0;0;820;820;0;0"/></rect></clipPath>
+    <clipPath id="l2"><rect x="40" y="140" height="30"><animate attributeName="width" dur="16s" repeatCount="indefinite" keyTimes="0;0.18;0.24;0.94;0.96;1" values="0;0;820;820;0;0"/></rect></clipPath>
+    <clipPath id="l3"><rect x="40" y="175" height="30"><animate attributeName="width" dur="16s" repeatCount="indefinite" keyTimes="0;0.26;0.32;0.94;0.96;1" values="0;0;820;820;0;0"/></rect></clipPath>
+    <clipPath id="l4"><rect x="40" y="210" height="30"><animate attributeName="width" dur="16s" repeatCount="indefinite" keyTimes="0;0.34;0.40;0.94;0.96;1" values="0;0;820;820;0;0"/></rect></clipPath>
+    <clipPath id="l5"><rect x="40" y="245" height="30"><animate attributeName="width" dur="16s" repeatCount="indefinite" keyTimes="0;0.42;0.48;0.94;0.96;1" values="0;0;820;820;0;0"/></rect></clipPath>
+  </defs>
+  <rect width="900" height="300" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <rect width="900" height="40" rx="14" fill="#161b22"/>
+  <rect y="26" width="900" height="14" fill="#161b22"/>
+  <circle cx="26" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="70" cy="20" r="6" fill="#27c93f">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="450" y="25" text-anchor="middle" font-family="Consolas,'Liberation Mono',Menlo,monospace" font-size="13" fill="#8b949e">kerith@lexfintech: ~/profile</text>
+
+  <g font-family="Consolas,'Liberation Mono',Menlo,monospace" font-size="17">
+    <g clip-path="url(#l0)"><text x="40" y="92"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3"> whoami</tspan></text></g>
+    <g clip-path="url(#l1)"><text x="40" y="127" fill="#79c0ff">Kerith Paul Perla · AI Developer · B.Tech '25 · Vijayawada, IN</text></g>
+    <g clip-path="url(#l2)"><text x="40" y="162"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3"> cat current_focus.txt</tspan></text></g>
+    <g clip-path="url(#l3)"><text x="40" y="197" fill="#d2a8ff">legal-AI · RAG · LangGraph agents · LLM microservices · guardrails</text></g>
+    <g clip-path="url(#l4)"><text x="40" y="232"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3"> ./run --mode=shipping</tspan></text></g>
+    <g clip-path="url(#l5)"><text x="40" y="267" fill="#ffa657">✔ 50+ page filings summarized · 5 ID doc types extracted · 7 agents orchestrated</text></g>
+  </g>
+  <rect x="40" y="276" width="10" height="3" fill="#7ee787">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>
