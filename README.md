@@ -5,7 +5,7 @@
 <br/>
 
 [![Email](https://img.shields.io/badge/Email-kerithpaul188@gmail.com-22d3ee?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0b0f1a)](mailto:kerithpaul188@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-a78bfa?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0b0f1a)](https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-a78bfa?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0b0f1a)](https://www.linkedin.com/in/kerith-paul-perla-9b304b319/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Live_Demo-f472b6?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=0b0f1a)](https://kerithpaul.github.io/portfolio)
 ![Profile views](https://komarev.com/ghpvc/?username=KerithPaul&style=for-the-badge&color=22d3ee&labelColor=0b0f1a)
 
